@@ -54,6 +54,8 @@ public class BST {
         root = bst.insert(root, 10);
         root = bst.insert(root, 13);
         root = bst.insert(root, 8);
+        root = bst.insert(root, 7);
+        root = bst.insert(root, 9);
         return root;
     }
 }

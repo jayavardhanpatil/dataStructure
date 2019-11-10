@@ -47,14 +47,14 @@ public class BST {
     public Node generateTree(){
         BST bst = new BST();
         Node root = null;
+        root = bst.insert(root, 12);
+        root = bst.insert(root, 5);
         root = bst.insert(root, 15);
-        root = bst.insert(root, 20);
-        root = bst.insert(root, 25);
-        root = bst.insert(root, 18);
-        root = bst.insert(root, 10);
-        root = bst.insert(root, 13);
-        root = bst.insert(root, 8);
+        root = bst.insert(root, 3);
         root = bst.insert(root, 7);
+        root = bst.insert(root, 13);
+        root = bst.insert(root, 17);
+        root = bst.insert(root, 1);
         root = bst.insert(root, 9);
         return root;
     }

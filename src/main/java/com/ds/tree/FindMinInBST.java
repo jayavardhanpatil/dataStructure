@@ -13,7 +13,7 @@ public class FindMinInBST {
         System.out.println("Max : "+findMax(root));
     }
 
-    private static int findMin(Node root){
+    public static int findMin(Node root){
         if(root == null){
             return -1;
         }else if(root.leftChild == null){

@@ -42,13 +42,12 @@ public class InsertatNthPosition {
         Node currentNode = head;
         temp.data = data;
         int count = 0;
-        while (currentNode!= null && count <= position){
-            if(count == position){
-                temp.next = currentNode.next;
-                currentNode.next = temp;
-            }
+        while (currentNode!= null && count < position){
             currentNode = currentNode.next;
             count++;
         }
+
+        temp.next = currentNode.next;
+        currentNode.next = temp;
     }
 }

@@ -15,15 +15,7 @@ public class CheckBSTofBinaryTree {
         BST bst = new BST();
         Node root = bst.generateTree();
         root = new Node();
-        root.data = 4;
-        root.rightChild = new Node();
-        root.rightChild.data = 6;
-        root.leftChild = new Node();
-        root.leftChild.data = 2;
-        root.rightChild.leftChild = new Node();
-        root.rightChild.leftChild.data = 8;
-        root.leftChild.leftChild = new Node();
-        root.leftChild.leftChild.data = 1;
+
 
         System.out.println(isBinarySearchTree(root, Long.MIN_VALUE, Long.MAX_VALUE));
 

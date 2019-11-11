@@ -20,12 +20,12 @@ public class InsertatNthPosition {
         System.out.println("Before Inserting ");
         InsertAtTheHead.printList(head.next);
         System.out.println("\nafter Inserting ");
-       int position = 0;
+       int position = 1;
         InsertAtThePosition(head, position, 30);
         System.out.println("\nafter Inserting ");
         InsertAtTheHead.printList(head.next);
 
-        position = 1;
+        position = 5;
         InsertAtThePosition(head, position, 10);
         System.out.println("\nafter Inserting ");
         InsertAtTheHead.printList(head.next);
@@ -41,7 +41,8 @@ public class InsertatNthPosition {
         Node temp = new Node();
         Node currentNode = head;
         temp.data = data;
-        int count = 0;
+        int count = 1;
+
         while (currentNode!= null && count < position){
             currentNode = currentNode.next;
             count++;

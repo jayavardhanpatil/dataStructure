@@ -1,5 +1,7 @@
 package com.ds.linkedList;
 
+import static com.ds.linkedList.ListUtils.printList;
+
 /**
  * Created by jayavardhanpatil on 11/11/19
  */
@@ -17,10 +19,10 @@ public class DeleteTheNodeAtNthPosition {
         InsertAtTheHead.insert( head,9);
 
 
-        InsertAtTheHead.printList(head.next);
-        deleteNodeAtNthPosition(head, 4);
+        printList(head.next);
+        deleteNodeAtNthPosition(head, 3);
         System.out.println("\n");
-        InsertAtTheHead.printList(head.next);
+        printList(head.next);
 
     }
 

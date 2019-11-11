@@ -1,5 +1,7 @@
 package com.ds.linkedList;
 
+import static com.ds.linkedList.ListUtils.printList;
+
 /**
  * Created by jayavardhanpatil on 11/11/19
  */
@@ -18,22 +20,22 @@ public class InsertatNthPosition {
        InsertAtTheHead.insert( head,9);
 
         System.out.println("Before Inserting ");
-        InsertAtTheHead.printList(head.next);
+        printList(head.next);
         System.out.println("\nafter Inserting ");
        int position = 1;
         InsertAtThePosition(head, position, 30);
         System.out.println("\nafter Inserting ");
-        InsertAtTheHead.printList(head.next);
+        printList(head.next);
 
         position = 5;
         InsertAtThePosition(head, position, 10);
         System.out.println("\nafter Inserting ");
-        InsertAtTheHead.printList(head.next);
+        printList(head.next);
 
         position = 5;
         InsertAtThePosition(head, position, 20);
         System.out.println("\nafter Inserting ");
-        InsertAtTheHead.printList(head.next);
+        printList(head.next);
 
     }
 

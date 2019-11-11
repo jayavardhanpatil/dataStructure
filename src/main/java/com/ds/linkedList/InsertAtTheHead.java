@@ -5,27 +5,27 @@ package com.ds.linkedList;
  */
 public class InsertAtTheHead {
 
-    static Node head = new Node();
     public static void main(String[] args) {
-        insert(1);
-        insert( 5);
-        insert( 3);
-        insert( 2);
-        insert( 8);
-        insert( 9);
-        printList(head);
+        Node head = new Node();
+        insert(head, 1);
+         insert( head,5);
+         insert( head, 3);
+        insert( head,2);
+        insert( head,8);
+        insert( head,9);
+        printList(head.next);
     }
 
-    private static void insert(int data){
+    public static void insert(Node head, int data){
         Node temp = new Node();
         temp.data = data;
-        temp.next = head;
-        head = temp;
+        temp.next = head.next;
+        head.next = temp;
     }
 
-    private static void printList(Node node){
-        while (node.next!=null){
-            System.out.println(node.data);
+    public static void printList(Node node){
+        while (node!=null){
+            System.out.print(node.data + "->");
             node = node.next;
         }
     }

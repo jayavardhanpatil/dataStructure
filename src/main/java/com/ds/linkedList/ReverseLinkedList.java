@@ -1,5 +1,7 @@
 package com.ds.linkedList;
 
+import com.sun.org.apache.bcel.internal.generic.ARETURN;
+
 /**
  * Created by jayavardhanpatil on 11/11/19
  */
@@ -17,8 +19,8 @@ public class ReverseLinkedList {
         ListUtils.printList(head.next);
 
         System.out.println("Reverse List");
-        head = reverseList(head.next);
-        ListUtils.printList(head);
+        head = reverseListUsingRecursive(head.next);
+        ListUtils.printListRecursive(head);
 
     }
 
@@ -35,6 +37,20 @@ public class ReverseLinkedList {
         }
         head = previous;
         return head;
+    }
+
+    public static Node reverseListUsingRecursive(Node head){
+        Node current;
+        current = head;
+
+        if(current.next == null){
+            head = current;
+            return head;
+        }
+        Node reversedhead = reverseListUsingRecursive(current.next);
+        current.next.next = current;
+        current.next = null;
+        return reversedhead;
     }
 
 }
